@@ -33,11 +33,7 @@ interface DataProps {
     }, [])
   
   return(
-    <main>
-      <h1>Página Home</h1>
-      <span>Seja bem vindo!</span>  
-      <br/>
-      
+    <main>      
       <h3>Meus repositorios</h3>
       {repos.map((item) => (
         <div key={item.id}>

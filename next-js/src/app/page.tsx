@@ -1,3 +1,5 @@
+import OwnerRepo from "./components/OwnerRepo";
+
 interface DataProps {
   id:number;
   name:string;
@@ -40,6 +42,7 @@ return(
     {data.map((item) => (
       <div key={item.id}>
         <strong>Repositorio: </strong> <a>{item.name}</a>
+        <OwnerRepo avatar_url={item.owner.avatar_url} name={item.name}></OwnerRepo>
         <br/><br/>
       </div>
     ))}  
